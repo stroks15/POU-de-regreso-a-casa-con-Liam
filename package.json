@@ -1,0 +1,19 @@
+{
+  "name": "pou-de-regreso-a-casa-con-liam",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pou de regreso a casa con Liam - juego HTML5 Canvas y Capacitor para Android",
+  "scripts": {
+    "start": "npx serve www",
+    "cap:sync": "cap sync android",
+    "android:debug": "cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3",
+    "serve": "^14.2.4"
+  }
+}
