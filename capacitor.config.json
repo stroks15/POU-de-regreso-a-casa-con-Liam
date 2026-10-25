@@ -1,0 +1,8 @@
+{
+  "appId": "com.pou.regresoacasa",
+  "appName": "Pou de regreso a casa con Liam",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
