@@ -1,19 +1,9 @@
 <!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="theme-color" content="#17152c"><meta name="description" content="Pou de regreso a casa con Liam: juego móvil de saltos y plataformas.">
-<title>Pou de regreso a casa con Liam</title><link rel="stylesheet" href="./style.css">
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="./supabase-config.js"></script>
-</head>
-<body>
-<main id="game-shell" aria-label="Pou de regreso a casa con Liam">
-<header><div class="brand"><span class="brand-pou">●</span><div><strong>Pou de regreso a casa</strong><small>con Liam</small></div></div><div class="scorebox">PUNTOS <b id="score">0</b></div></header>
-<section id="stage"><canvas id="game" aria-label="Juego Pou"></canvas>
-<div id="start-screen" class="overlay"><div class="pou-mark">●</div><h1>¡Pou vuelve a casa!</h1><p>Salta cada vez más alto. No dejes que Pou caiga.</p><button id="start-btn">JUGAR</button><small>Inclina el teléfono o usa ◀ ▶</small></div>
-<div id="game-over" class="overlay hidden"><h2>¡Buen intento!</h2><p>Puntuación: <strong id="final-score">0</strong></p><p id="save-status" role="status">Guardando récord…</p><button id="restart-btn">VOLVER A JUGAR</button></div>
-<div id="touch-controls" class="touch-controls hidden"><button id="left-btn" aria-label="Mover a la izquierda">◀</button><button id="right-btn" aria-label="Mover a la derecha">▶</button></div>
-</section><footer><span id="sensor-status">Preparando controles…</span><span>Récord local: <b id="best">0</b></span></footer>
-</main><script src="./game.js"></script>
-</body></html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#05080e"><meta name="description" content="Pou de regreso a casa con Liam: aventura de plataformas, saltos y transformación flotante."><title>Pou de regreso a casa con Liam</title><link rel="stylesheet" href="./style.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="./supabase-config.js"></script></head>
+<body><main id="game-shell"><header><button id="back-btn" class="iconbtn" aria-label="Volver">⬅️</button><div class="mission-title">Game Progress &amp; Missions</div><button id="missions-btn" class="iconbtn closebtn" aria-label="Misiones">✕</button></header>
+<section id="game-frame"><canvas id="game" aria-label="Pou Back Home"></canvas><div class="hud"><div>NIVEL <b id="level">1</b></div><div>PUNTOS <b id="score">2183</b></div></div>
+<div id="start-screen" class="overlay"><h1>POU: REGRESO A CASA</h1><p>Ayuda a Pou a volver a casa con Liam.</p><p>Camina, salta y transfórmate en una bola flotante para superar obstáculos.</p><button id="start-btn">¡JUGAR!</button></div>
+<div id="game-over" class="overlay hidden"><h2 id="result-title">¡Nivel completado!</h2><p id="result-text">¡Has llegado a casa!</p><button id="next-btn">CONTINUAR</button><button id="restart-btn" class="secondary">REINTENTAR</button></div>
+</section>
+<section class="controls"><div class="pad"><button id="left-btn" aria-label="Izquierda">◀</button><button id="jump-btn" aria-label="Saltar">▲</button><button id="right-btn" aria-label="Derecha">▶</button></div><button id="transform-btn"><b>Z</b><span>TRANSFORMAR / FLOTAR</span></button><div class="hint">← → moverse · ▲ saltar · Z flotar · ¡Llega a la casa!</div></section>
+<footer><span id="status">Misión: encuentra la casa</span><span>Récord <b id="best">0</b></span></footer></main><script src="./game.js"></script></body></html>
